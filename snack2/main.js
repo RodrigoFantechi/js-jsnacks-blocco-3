@@ -8,7 +8,12 @@ const parole = ["pippo", "PLUTO","Paperino"];
 const secondoArrayConLettereInizialiMaiuscole = parole.map(element => {
   let newWord = element.toLowerCase();
 return  newWord.charAt(0).toUpperCase()+newWord.slice(1);
-
 });
 
+//oppure
+const secondoArray = parole.map(element => {
+  return  element.charAt(0).toUpperCase()+element.slice(1).toLowerCase();
+  });
+
 console.log(secondoArrayConLettereInizialiMaiuscole);
+console.log(secondoArray);
