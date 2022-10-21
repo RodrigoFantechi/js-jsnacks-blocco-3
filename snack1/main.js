@@ -7,59 +7,59 @@ const auto = [
     {
         marca: 'BMW',
         modello: '74-e',
-        Alimentazione: 'benzina',
+        alimentazione: 'benzina',
     },
     {
         marca: 'audi',
         modello: 'tt',
-        Alimentazione: 'diesel',
+        alimentazione: 'diesel',
     },
     {
         marca: 'fiat',
         modello: 'panda',
-        Alimentazione: 'benzina',
+        alimentazione: 'benzina',
     },
     {
         marca: 'toyota',
         modello: 'yaris',
-        Alimentazione: 'diesel',
+        alimentazione: 'diesel',
     },
     {
         marca: 'renault',
         modello: '5 gt turbo',
-        Alimentazione: 'gpl',
+        alimentazione: 'gpl',
     },
     {
         marca: 'renault',
         modello: 'clio',
-        Alimentazione: 'gpl',
+        alimentazione: 'gpl',
     },
     {
         marca: 'alfa romeo',
         modello: '169',
-        Alimentazione: 'elettrico',
+        alimentazione: 'elettrico',
     },
     {
         marca: 'mini',
         modello: 'couper s',
-        Alimentazione: 'elettrico',
+        alimentazione: 'elettrico',
     },
     {
         marca: 'dacia',
         modello: 'duster',
-        Alimentazione: 'metano',
+        alimentazione: 'metano',
     },
     {
         marca: 'peugeot',
         modello: '206',
-        Alimentazione: 'metano',
+        alimentazione: 'metano',
     }
 
 
 ]
 
-const autoBenzina = auto.filter(Element => {
-    if (Element.Alimentazione === 'benzina') {
+const autoBenzina = auto.filter(element => {
+    if (element.alimentazione === 'benzina') {
         return true;
     }
     return false;
@@ -67,16 +67,16 @@ const autoBenzina = auto.filter(Element => {
 });
 
 
-const autoDiesel = auto.filter(Element => {
-    if (Element.Alimentazione === 'diesel') {
+const autoDiesel = auto.filter(element => {
+    if (element.alimentazione === 'diesel') {
         return true;
     }
     return false;
 
 });
 
-const tutteLeAltreAuto = auto.filter(Element => {
-    if (Element.Alimentazione !== 'benzina' && Element.Alimentazione !== 'diesel') {
+const tutteLeAltreAuto = auto.filter(element => {
+    if (element.alimentazione !== 'benzina' && element.alimentazione !== 'diesel') {
         return true;
     }
     return false;
