@@ -2,20 +2,21 @@
 Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘Paperino’] */
 
 
-const parole = ["pippo", "PLUTO","Paperino"];
+const parole = ["pippo", "PLUTO", "Paperino"];
 
 
 const secondoArrayConLettereInizialiMaiuscole = parole.map(element => {
-  let newWord = element.toLowerCase();
-return  newWord.charAt(0).toUpperCase()+newWord.slice(1);
+    let newWord = element.toLowerCase();
+    return newWord.charAt(0).toUpperCase() + newWord.slice(1);
 });
 
 //oppure
 const secondoArray = parole.map(element => {
-  return  element.charAt(0).toUpperCase()+element.slice(1).toLowerCase();
-  });
-  //oppure
-  const secondoArrayDiParole = parole.map(element => element.charAt(0).toUpperCase()+element.slice(1).toLowerCase());
+    return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+});
+
+//oppure
+const secondoArrayDiParole = parole.map(element => element.charAt(0).toUpperCase() + element.slice(1).toLowerCase());
 
 console.log(secondoArrayConLettereInizialiMaiuscole);
 console.log(secondoArray);
