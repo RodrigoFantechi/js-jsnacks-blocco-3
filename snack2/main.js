@@ -14,6 +14,9 @@ return  newWord.charAt(0).toUpperCase()+newWord.slice(1);
 const secondoArray = parole.map(element => {
   return  element.charAt(0).toUpperCase()+element.slice(1).toLowerCase();
   });
+  //oppure
+  const secondoArrayDiParole = parole.map(element => element.charAt(0).toUpperCase()+element.slice(1).toLowerCase());
 
 console.log(secondoArrayConLettereInizialiMaiuscole);
 console.log(secondoArray);
+console.log(secondoArrayDiParole);
